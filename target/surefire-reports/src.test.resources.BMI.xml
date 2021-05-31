@@ -1,0 +1,14 @@
+<testsuite failures="0" name="src/test/resources/BMI.feature" skipped="0" tests="1" time="3.3002">
+  <testcase classname="src.test.resources.BMI" name="User weight category based on the calculated BMI" time="3.3002">
+    <system-out>* configure headers = read('classpath:headers.js') ........................ passed
+Given url BMIbaseURL ...................................................... passed
+And path 'weight-category' ................................................ passed
+* def calculate = call read('BMI.feature@CalculateBMI') ................... passed
+* def bmi = calculate.response.bmi ........................................ passed
+And params {"bmi":'#(bmi)'} ............................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* print 'Calculated BMI---',bmi ........................................... passed
+* print 'Weight Category---',response.weightCategory ...................... passed</system-out>
+  </testcase>
+</testsuite>

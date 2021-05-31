@@ -1,0 +1,2360 @@
+20:15:22.049 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+20:15:22.158 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:15:22.256 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - scenario called at line: 18 by tag: @CalculateBMI
+20:15:22.846 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/imperial?weight=200&height=68
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+20:15:24.692 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1844.79
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 75
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 14:45:25 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b10205-1767d9961b1b9bc11f834e31;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 95
+1 < X-RateLimit-Requests-Reset: 2595712
+1 < x-amz-apigw-id: AC1A4HLICYcFQPw=
+1 < x-amzn-RequestId: 52754338-6635-421f-815c-f801b69028c2
+{"bmi":30.406574394463668,"weight":"200","height":"68","weightCategory":""}
+
+20:15:24.708 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/weight-category?bmi=30.406574394463668
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+20:15:26.045 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1336.76
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 76
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 14:45:27 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b10206-20bf5e3973295cf12fba2f08;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 94
+1 < X-RateLimit-Requests-Reset: 2595710
+1 < x-amz-apigw-id: AC1BGEe0iYcFbyw=
+1 < x-amzn-RequestId: 5558f201-2501-46e7-b88a-4e7cb3936f0f
+{"bmi":"30.406574394463668","weightCategory":"Obese","ObeseClass":"Class 1"}
+
+20:15:26.047 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Calculated BMI--- 30.406574394463668
+20:15:26.051 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Weight Category--- Obese
+20:15:26.092 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 2: src/test/resources/BMI.feature
+20:15:26.105 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:15:26.114 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 161
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+{"id":11,"username":"Jack123","firstName":"Jack","lastName":"Sparrow","email":"jacksparrow@gmail.com","password":"Jack@1234","phone":"9003061057","userStatus":0}
+
+20:15:27.210 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1095.32
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 14:45:28 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"11"}
+
+20:15:27.211 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "11"
+}
+
+20:15:27.240 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Date Match Status false
+20:15:27.246 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:15:27.253 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user/createWithArray
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 498
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+[{"id":40,"username":"kinginnorth","firstName":"John","lastName":"Snow","email":"nighwatch@gmail.com","password":"stark@123","phone":"0123456789","userStatus":0},{"id":41,"username":"wheelbreaker","firstName":"Daenrys","lastName":"Targaryen","email":"dracarys@gmail.com","password":"Targaryen@123","phone":"0123456789","userStatus":0},{"id":41,"username":"knightking","firstName":"Long","lastName":"Night","email":"dragonblade@gmail.com","password":"Night@123","phone":"0123456789","userStatus":0}]
+
+20:15:28.217 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 962.48
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 14:45:29 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"ok"}
+
+20:15:28.217 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "ok"
+}
+
+20:15:28.223 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 2 of 2: src/test/resources/Store.feature
+20:15:58.503 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+20:15:58.614 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:15:58.708 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - scenario called at line: 18 by tag: @CalculateBMI
+20:15:59.214 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/imperial?weight=200&height=68
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+20:16:00.578 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1362.25
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 75
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 14:46:01 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b10229-15b2786973b5d3f4177c79c6;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 93
+1 < X-RateLimit-Requests-Reset: 2595676
+1 < x-amz-apigw-id: AC1GhGSTCYcFlvQ=
+1 < x-amzn-RequestId: 81a7cfd1-f100-4426-8dd7-d193267000fe
+{"bmi":30.406574394463668,"weight":"200","height":"68","weightCategory":""}
+
+20:16:00.594 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/weight-category?bmi=30.406574394463668
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+20:16:01.819 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1225.00
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 76
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 14:46:02 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b1022a-525b75370308237d248d3567;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 92
+1 < X-RateLimit-Requests-Reset: 2595675
+1 < x-amz-apigw-id: AC1GuGVDCYcFlvQ=
+1 < x-amzn-RequestId: 07a50f47-b222-45ed-9a0d-e6904b3bf0cb
+{"bmi":"30.406574394463668","weightCategory":"Obese","ObeseClass":"Class 1"}
+
+20:16:01.821 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Calculated BMI--- 30.406574394463668
+20:16:01.826 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Weight Category--- Obese
+20:16:01.859 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 2: src/test/resources/BMI.feature
+20:16:01.872 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:16:01.879 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 161
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+{"id":11,"username":"Jack123","firstName":"Jack","lastName":"Sparrow","email":"jacksparrow@gmail.com","password":"Jack@1234","phone":"9003061057","userStatus":0}
+
+20:16:02.883 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1003.25
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 14:46:03 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"11"}
+
+20:16:02.883 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "11"
+}
+
+20:16:02.904 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Date Match Status false
+20:16:02.910 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:16:02.917 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user/createWithArray
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 498
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+[{"id":40,"username":"kinginnorth","firstName":"John","lastName":"Snow","email":"nighwatch@gmail.com","password":"stark@123","phone":"0123456789","userStatus":0},{"id":41,"username":"wheelbreaker","firstName":"Daenrys","lastName":"Targaryen","email":"dracarys@gmail.com","password":"Targaryen@123","phone":"0123456789","userStatus":0},{"id":41,"username":"knightking","firstName":"Long","lastName":"Night","email":"dragonblade@gmail.com","password":"Night@123","phone":"0123456789","userStatus":0}]
+
+20:16:03.894 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 975.53
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 14:46:04 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"ok"}
+
+20:16:03.895 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "ok"
+}
+
+20:16:03.900 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 2 of 2: src/test/resources/Store.feature
+20:18:15.264 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+20:18:15.377 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:18:15.472 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - scenario called at line: 18 by tag: @CalculateBMI
+20:18:16.028 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/imperial?weight=200&height=68
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+20:18:17.501 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1470.97
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 75
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 14:48:18 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b102b2-11ffdfde7034659031311c82;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 91
+1 < X-RateLimit-Requests-Reset: 2595539
+1 < x-amz-apigw-id: AC1b7FTFiYcF0og=
+1 < x-amzn-RequestId: 3e387a8f-a368-430e-bc6b-25f348677238
+{"bmi":30.406574394463668,"weight":"200","height":"68","weightCategory":""}
+
+20:18:17.516 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/weight-category?bmi=30.406574394463668
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+20:18:18.639 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1122.60
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 76
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 14:48:19 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b102b3-308bd3c7365e2b5e5fee9c85;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 90
+1 < X-RateLimit-Requests-Reset: 2595538
+1 < x-amz-apigw-id: AC1cGG6biYcFbyw=
+1 < x-amzn-RequestId: f8750809-7050-48d8-9dfa-ea38b3525b07
+{"bmi":"30.406574394463668","weightCategory":"Obese","ObeseClass":"Class 1"}
+
+20:18:18.641 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Calculated BMI--- 30.406574394463668
+20:18:18.645 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Weight Category--- Obese
+20:18:18.677 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 2: src/test/resources/BMI.feature
+20:18:18.690 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:18:18.697 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 161
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+{"id":11,"username":"Jack123","firstName":"Jack","lastName":"Sparrow","email":"jacksparrow@gmail.com","password":"Jack@1234","phone":"9003061057","userStatus":0}
+
+20:18:19.799 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1100.83
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 14:48:20 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"11"}
+
+20:18:19.799 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "11"
+}
+
+20:18:19.818 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Date Match Status false
+20:18:19.824 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:18:19.832 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user/createWithArray
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 498
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+[{"id":40,"username":"kinginnorth","firstName":"John","lastName":"Snow","email":"nighwatch@gmail.com","password":"stark@123","phone":"0123456789","userStatus":0},{"id":41,"username":"wheelbreaker","firstName":"Daenrys","lastName":"Targaryen","email":"dracarys@gmail.com","password":"Targaryen@123","phone":"0123456789","userStatus":0},{"id":41,"username":"knightking","firstName":"Long","lastName":"Night","email":"dragonblade@gmail.com","password":"Night@123","phone":"0123456789","userStatus":0}]
+
+20:18:20.802 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 969.34
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 14:48:21 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"ok"}
+
+20:18:20.803 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "ok"
+}
+
+20:18:20.808 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 2 of 2: src/test/resources/Store.feature
+20:24:46.317 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+20:24:46.434 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:24:46.532 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - scenario called at line: 18 by tag: @CalculateBMI
+20:24:47.059 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/imperial?weight=200&height=68
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+20:24:48.864 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1802.85
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 75
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 14:54:50 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b10439-053721eb33eb45df2eb8f5d1;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 89
+1 < X-RateLimit-Requests-Reset: 2595147
+1 < x-amz-apigw-id: AC2ZCHnoiYcFapQ=
+1 < x-amzn-RequestId: bd70005a-2355-488f-afbd-80b545db1b5d
+{"bmi":30.406574394463668,"weight":"200","height":"68","weightCategory":""}
+
+20:24:48.880 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/weight-category?bmi=30.406574394463668
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+20:24:50.240 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1358.46
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 76
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 14:54:51 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b1043b-5585418c18e141fd146f1716;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 88
+1 < X-RateLimit-Requests-Reset: 2595146
+1 < x-amz-apigw-id: AC2ZQGOviYcFqiw=
+1 < x-amzn-RequestId: 246c5c87-abce-4faa-8a80-c8ecb764073a
+{"bmi":"30.406574394463668","weightCategory":"Obese","ObeseClass":"Class 1"}
+
+20:24:50.242 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Calculated BMI--- 30.406574394463668
+20:24:50.246 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Weight Category--- Obese
+20:24:50.309 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 2: src/test/resources/BMI.feature
+20:24:50.321 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:24:50.329 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 161
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+{"id":11,"username":"Jack123","firstName":"Jack","lastName":"Sparrow","email":"jacksparrow@gmail.com","password":"Jack@1234","phone":"9003061057","userStatus":0}
+
+20:24:51.497 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1167.17
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 14:54:52 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"11"}
+
+20:24:51.498 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "11"
+}
+
+20:24:51.517 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Date Match Status false
+20:24:51.524 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:24:51.532 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user/createWithArray
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 498
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+[{"id":40,"username":"kinginnorth","firstName":"John","lastName":"Snow","email":"nighwatch@gmail.com","password":"stark@123","phone":"0123456789","userStatus":0},{"id":41,"username":"wheelbreaker","firstName":"Daenrys","lastName":"Targaryen","email":"dracarys@gmail.com","password":"Targaryen@123","phone":"0123456789","userStatus":0},{"id":41,"username":"knightking","firstName":"Long","lastName":"Night","email":"dragonblade@gmail.com","password":"Night@123","phone":"0123456789","userStatus":0}]
+
+20:24:52.559 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1025.78
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 14:54:53 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"ok"}
+
+20:24:52.559 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "ok"
+}
+
+20:24:52.566 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 2 of 2: src/test/resources/Store.feature
+20:26:15.979 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+20:26:16.137 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:26:16.236 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - scenario called at line: 18 by tag: @CalculateBMI
+20:26:16.749 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/imperial?weight=200&height=68
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+20:26:18.392 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1642.67
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 75
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 14:56:19 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b10493-1cff0cf30b72d0742a5baa6b;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 87
+1 < X-RateLimit-Requests-Reset: 2595058
+1 < x-amz-apigw-id: AC2nEFvZiYcF5aw=
+1 < x-amzn-RequestId: 1d08420f-d77f-4c4a-831d-830de9e6c5ef
+{"bmi":30.406574394463668,"weight":"200","height":"68","weightCategory":""}
+
+20:26:18.407 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/weight-category?bmi=30.406574394463668
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+20:26:19.539 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1131.46
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 76
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 14:56:20 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b10494-1a61466f58da53b202e03db4;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 86
+1 < X-RateLimit-Requests-Reset: 2595057
+1 < x-amz-apigw-id: AC2nPG8aiYcF_gg=
+1 < x-amzn-RequestId: 291dde75-46fa-421b-91b8-6a6753e61c13
+{"bmi":"30.406574394463668","weightCategory":"Obese","ObeseClass":"Class 1"}
+
+20:26:19.542 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Calculated BMI--- 30.406574394463668
+20:26:19.546 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Weight Category--- Obese
+20:26:19.578 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 2: src/test/resources/BMI.feature
+20:26:19.591 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:26:19.598 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 161
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+{"id":11,"username":"Jack123","firstName":"Jack","lastName":"Sparrow","email":"jacksparrow@gmail.com","password":"Jack@1234","phone":"9003061057","userStatus":0}
+
+20:26:20.616 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1016.54
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 14:56:21 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"11"}
+
+20:26:20.617 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "11"
+}
+
+20:26:20.635 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Date Match Status false
+20:26:20.641 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:26:20.649 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user/createWithArray
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 498
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+[{"id":40,"username":"kinginnorth","firstName":"John","lastName":"Snow","email":"nighwatch@gmail.com","password":"stark@123","phone":"0123456789","userStatus":0},{"id":41,"username":"wheelbreaker","firstName":"Daenrys","lastName":"Targaryen","email":"dracarys@gmail.com","password":"Targaryen@123","phone":"0123456789","userStatus":0},{"id":41,"username":"knightking","firstName":"Long","lastName":"Night","email":"dragonblade@gmail.com","password":"Night@123","phone":"0123456789","userStatus":0}]
+
+20:26:21.660 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1010.15
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 14:56:22 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"ok"}
+
+20:26:21.660 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "ok"
+}
+
+20:26:21.666 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 2 of 2: src/test/resources/Store.feature
+20:32:45.290 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+20:32:45.405 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:32:45.505 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - scenario called at line: 18 by tag: @CalculateBMI
+20:32:46.018 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/imperial?weight=200&height=68
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+20:32:47.704 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1684.41
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 75
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:02:48 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b10618-5bdd9aa529601cfc0634e022;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 85
+1 < X-RateLimit-Requests-Reset: 2594669
+1 < x-amz-apigw-id: AC3j3FXNCYcF_2Q=
+1 < x-amzn-RequestId: 4a41eeb2-dea4-4862-bed3-57a3c539ee82
+{"bmi":30.406574394463668,"weight":"200","height":"68","weightCategory":""}
+
+20:32:47.719 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/weight-category?bmi=30.406574394463668
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+20:32:49.068 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1348.59
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 76
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:02:50 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b10619-0ee0c9b258f196d70735a3df;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 84
+1 < X-RateLimit-Requests-Reset: 2594667
+1 < x-amz-apigw-id: AC3kEFYVCYcF3mA=
+1 < x-amzn-RequestId: e661bf39-3abf-46f3-b877-c09ea98e1654
+{"bmi":"30.406574394463668","weightCategory":"Obese","ObeseClass":"Class 1"}
+
+20:32:49.070 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Calculated BMI--- 30.406574394463668
+20:32:49.074 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Weight Category--- Obese
+20:32:49.105 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 2: src/test/resources/BMI.feature
+20:32:49.113 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:32:49.121 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 161
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+{"id":11,"username":"Jack123","firstName":"Jack","lastName":"Sparrow","email":"jacksparrow@gmail.com","password":"Jack@1234","phone":"9003061057","userStatus":0}
+
+20:32:50.200 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1078.31
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:02:51 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"11"}
+
+20:32:50.200 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "11"
+}
+
+20:32:50.225 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Date Match Status false
+20:32:50.232 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:32:50.240 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user/createWithArray
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 498
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+[{"id":40,"username":"kinginnorth","firstName":"John","lastName":"Snow","email":"nighwatch@gmail.com","password":"stark@123","phone":"0123456789","userStatus":0},{"id":41,"username":"wheelbreaker","firstName":"Daenrys","lastName":"Targaryen","email":"dracarys@gmail.com","password":"Targaryen@123","phone":"0123456789","userStatus":0},{"id":41,"username":"knightking","firstName":"Long","lastName":"Night","email":"dragonblade@gmail.com","password":"Night@123","phone":"0123456789","userStatus":0}]
+
+20:32:51.290 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1049.00
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:02:52 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"ok"}
+
+20:32:51.290 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "ok"
+}
+
+20:32:51.296 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 2 of 2: src/test/resources/Store.feature
+20:34:21.779 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+20:34:21.890 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:34:21.985 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - scenario called at line: 18 by tag: @CalculateBMI
+20:34:22.490 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/imperial?weight=200&height=68
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+20:34:24.007 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1515.55
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 75
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:04:25 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b10679-3527c2f616133de54313ab90;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 83
+1 < X-RateLimit-Requests-Reset: 2594572
+1 < x-amz-apigw-id: AC3y8EPiiYcF1Bg=
+1 < x-amzn-RequestId: 656d0f0c-82ab-4f7c-9ca0-185b5eca0a15
+{"bmi":30.406574394463668,"weight":"200","height":"68","weightCategory":""}
+
+20:34:24.023 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/weight-category?bmi=30.406574394463668
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+20:34:25.150 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1125.88
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 76
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:04:26 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b1067a-57aea1d377cad2d559f709d9;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 82
+1 < X-RateLimit-Requests-Reset: 2594571
+1 < x-amz-apigw-id: AC3zHFmkiYcFvtA=
+1 < x-amzn-RequestId: 120c0874-d43d-4d70-81ad-936e086e0eb6
+{"bmi":"30.406574394463668","weightCategory":"Obese","ObeseClass":"Class 1"}
+
+20:34:25.153 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Calculated BMI--- 30.406574394463668
+20:34:25.156 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Weight Category--- Obese
+20:34:25.190 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 2: src/test/resources/BMI.feature
+20:34:25.205 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:34:25.213 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 161
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+{"id":11,"username":"Jack123","firstName":"Jack","lastName":"Sparrow","email":"jacksparrow@gmail.com","password":"Jack@1234","phone":"9003061057","userStatus":0}
+
+20:34:26.283 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1069.25
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:04:27 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"11"}
+
+20:34:26.283 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "11"
+}
+
+20:34:26.302 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Date Match Status false
+20:34:26.309 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:34:26.317 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user/createWithArray
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 498
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+[{"id":40,"username":"kinginnorth","firstName":"John","lastName":"Snow","email":"nighwatch@gmail.com","password":"stark@123","phone":"0123456789","userStatus":0},{"id":41,"username":"wheelbreaker","firstName":"Daenrys","lastName":"Targaryen","email":"dracarys@gmail.com","password":"Targaryen@123","phone":"0123456789","userStatus":0},{"id":41,"username":"knightking","firstName":"Long","lastName":"Night","email":"dragonblade@gmail.com","password":"Night@123","phone":"0123456789","userStatus":0}]
+
+20:34:27.347 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1029.71
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:04:28 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"ok"}
+
+20:34:27.347 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "ok"
+}
+
+20:34:27.353 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 2 of 2: src/test/resources/Store.feature
+20:36:24.783 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+20:36:24.897 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:36:24.991 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - scenario called at line: 18 by tag: @CalculateBMI
+20:36:25.492 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/imperial?weight=200&height=68
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+20:36:27.493 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1998.77
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 75
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:06:28 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b106f4-0aa02ddc49f5a5dc24cd9c00;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 81
+1 < X-RateLimit-Requests-Reset: 2594449
+1 < x-amz-apigw-id: AC4GOFmDiYcF85Q=
+1 < x-amzn-RequestId: f7091116-a2d2-4900-87d6-efc26b2f1544
+{"bmi":30.406574394463668,"weight":"200","height":"68","weightCategory":""}
+
+20:36:27.521 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/weight-category?bmi=30.406574394463668
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+20:36:28.649 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1127.72
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 76
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:06:29 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b106f5-7db0b17861919cdd74f61fb4;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 80
+1 < X-RateLimit-Requests-Reset: 2594448
+1 < x-amz-apigw-id: AC4GaFSZCYcFlUQ=
+1 < x-amzn-RequestId: 9c5663d1-e9bd-443e-9b64-c81f527bba7c
+{"bmi":"30.406574394463668","weightCategory":"Obese","ObeseClass":"Class 1"}
+
+20:36:28.652 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Calculated BMI--- 30.406574394463668
+20:36:28.656 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Weight Category--- Obese
+20:36:28.694 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 2: src/test/resources/BMI.feature
+20:36:28.705 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:36:28.713 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 161
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+{"id":11,"username":"Jack123","firstName":"Jack","lastName":"Sparrow","email":"jacksparrow@gmail.com","password":"Jack@1234","phone":"9003061057","userStatus":0}
+
+20:36:29.889 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1175.73
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:06:30 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"11"}
+
+20:36:29.889 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "11"
+}
+
+20:36:29.916 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Date Match Status false
+20:36:29.922 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:36:29.930 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user/createWithArray
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 498
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+[{"id":40,"username":"kinginnorth","firstName":"John","lastName":"Snow","email":"nighwatch@gmail.com","password":"stark@123","phone":"0123456789","userStatus":0},{"id":41,"username":"wheelbreaker","firstName":"Daenrys","lastName":"Targaryen","email":"dracarys@gmail.com","password":"Targaryen@123","phone":"0123456789","userStatus":0},{"id":41,"username":"knightking","firstName":"Long","lastName":"Night","email":"dragonblade@gmail.com","password":"Night@123","phone":"0123456789","userStatus":0}]
+
+20:36:30.908 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 976.99
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:06:32 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"ok"}
+
+20:36:30.909 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "ok"
+}
+
+20:36:30.914 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 2 of 2: src/test/resources/Store.feature
+20:48:37.745 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+20:48:37.866 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:48:37.964 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - scenario called at line: 18 by tag: @CalculateBMI
+20:48:38.482 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/imperial?weight=200&height=68
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+20:48:40.137 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1653.66
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 75
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:18:41 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b109d0-3f971512618e2f5113023ad3;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 79
+1 < X-RateLimit-Requests-Reset: 2593716
+1 < x-amz-apigw-id: AC54rG4vCYcFaYw=
+1 < x-amzn-RequestId: a8d5c1df-bc98-48d8-879e-79c4dd0d4bd5
+{"bmi":30.406574394463668,"weight":"200","height":"68","weightCategory":""}
+
+20:48:40.152 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/weight-category?bmi=30.406574394463668
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+20:48:41.546 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1393.98
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 76
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:18:42 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b109d2-52d97edc3bef85d03b2bf456;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 78
+1 < X-RateLimit-Requests-Reset: 2593715
+1 < x-amz-apigw-id: AC545F7-iYcFZ-w=
+1 < x-amzn-RequestId: c8f513f9-3fa8-4e98-8f87-cf96706729e4
+{"bmi":"30.406574394463668","weightCategory":"Obese","ObeseClass":"Class 1"}
+
+20:48:41.548 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Calculated BMI--- 30.406574394463668
+20:48:41.552 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Weight Category--- Obese
+20:48:41.584 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 2: src/test/resources/BMI.feature
+20:48:41.597 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:48:41.605 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 161
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+{"id":11,"username":"Jack123","firstName":"Jack","lastName":"Sparrow","email":"jacksparrow@gmail.com","password":"Jack@1234","phone":"9003061057","userStatus":0}
+
+20:48:42.720 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1113.68
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:18:43 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"11"}
+
+20:48:42.721 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "11"
+}
+
+20:48:42.740 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Date Match Status false
+20:48:42.746 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:48:42.754 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user/createWithArray
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 498
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+[{"id":40,"username":"kinginnorth","firstName":"John","lastName":"Snow","email":"nighwatch@gmail.com","password":"stark@123","phone":"0123456789","userStatus":0},{"id":41,"username":"wheelbreaker","firstName":"Daenrys","lastName":"Targaryen","email":"dracarys@gmail.com","password":"Targaryen@123","phone":"0123456789","userStatus":0},{"id":41,"username":"knightking","firstName":"Long","lastName":"Night","email":"dragonblade@gmail.com","password":"Night@123","phone":"0123456789","userStatus":0}]
+
+20:48:43.780 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1025.61
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:18:44 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"ok"}
+
+20:48:43.780 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "ok"
+}
+
+20:48:43.786 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 2 of 2: src/test/resources/Store.feature
+20:53:13.228 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+20:53:13.341 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:53:13.438 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - scenario called at line: 18 by tag: @CalculateBMI
+20:53:13.953 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/imperial?weight=200&height=68
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+20:53:15.411 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1457.06
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 75
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:23:16 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b10ae4-0b7d1b3659906cb374feb441;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 77
+1 < X-RateLimit-Requests-Reset: 2593441
+1 < x-amz-apigw-id: AC6juE9diYcFdHg=
+1 < x-amzn-RequestId: b6a9e8d4-b609-4ecb-bf66-80695cac1d7f
+{"bmi":30.406574394463668,"weight":"200","height":"68","weightCategory":""}
+
+20:53:15.427 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/weight-category?bmi=30.406574394463668
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+20:53:16.620 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1191.63
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 76
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:23:17 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b10ae5-18b1306f17afb1c448d47d0a;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 76
+1 < X-RateLimit-Requests-Reset: 2593440
+1 < x-amz-apigw-id: AC6j6HPaiYcF85w=
+1 < x-amzn-RequestId: 6968b6ca-890c-43c4-9f5c-b02b0f302d6b
+{"bmi":"30.406574394463668","weightCategory":"Obese","ObeseClass":"Class 1"}
+
+20:53:16.623 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Calculated BMI--- 30.406574394463668
+20:53:16.627 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Weight Category--- Obese
+20:53:16.660 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 2: src/test/resources/BMI.feature
+20:53:16.668 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:53:16.675 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 161
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+{"id":11,"username":"Jack123","firstName":"Jack","lastName":"Sparrow","email":"jacksparrow@gmail.com","password":"Jack@1234","phone":"9003061057","userStatus":0}
+
+20:53:17.812 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1136.12
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:23:18 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"11"}
+
+20:53:17.812 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "11"
+}
+
+20:53:17.839 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Date Match Status false
+20:53:17.845 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:53:17.852 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user/createWithArray
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 498
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+[{"id":40,"username":"kinginnorth","firstName":"John","lastName":"Snow","email":"nighwatch@gmail.com","password":"stark@123","phone":"0123456789","userStatus":0},{"id":41,"username":"wheelbreaker","firstName":"Daenrys","lastName":"Targaryen","email":"dracarys@gmail.com","password":"Targaryen@123","phone":"0123456789","userStatus":0},{"id":41,"username":"knightking","firstName":"Long","lastName":"Night","email":"dragonblade@gmail.com","password":"Night@123","phone":"0123456789","userStatus":0}]
+
+20:53:18.853 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1000.13
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:23:19 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"ok"}
+
+20:53:18.854 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "ok"
+}
+
+20:53:18.860 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 2 of 2: src/test/resources/Store.feature
+20:54:09.001 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+20:54:09.112 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:54:09.212 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - scenario called at line: 18 by tag: @CalculateBMI
+20:54:09.713 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/imperial?weight=200&height=68
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+20:54:11.052 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1338.35
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 75
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:24:12 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b10b1c-01673bb75145706a3df41146;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 75
+1 < X-RateLimit-Requests-Reset: 2593385
+1 < x-amz-apigw-id: AC6sbG69iYcFdDQ=
+1 < x-amzn-RequestId: d56f5a26-8ed8-46eb-9dc6-424d31b6e451
+{"bmi":30.406574394463668,"weight":"200","height":"68","weightCategory":""}
+
+20:54:11.068 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/weight-category?bmi=30.406574394463668
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+20:54:12.174 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1105.72
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 76
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:24:13 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b10b1d-47ca85b4735b71db1137d455;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 74
+1 < X-RateLimit-Requests-Reset: 2593384
+1 < x-amz-apigw-id: AC6smHnZiYcFUBg=
+1 < x-amzn-RequestId: a2e23fdf-aadd-4333-b4ff-848c5bff8343
+{"bmi":"30.406574394463668","weightCategory":"Obese","ObeseClass":"Class 1"}
+
+20:54:12.176 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Calculated BMI--- 30.406574394463668
+20:54:12.181 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Weight Category--- Obese
+20:54:12.215 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 2: src/test/resources/BMI.feature
+20:54:12.234 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:54:12.245 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 161
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+{"id":11,"username":"Jack123","firstName":"Jack","lastName":"Sparrow","email":"jacksparrow@gmail.com","password":"Jack@1234","phone":"9003061057","userStatus":0}
+
+20:54:13.303 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1056.93
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:24:14 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"11"}
+
+20:54:13.303 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "11"
+}
+
+20:54:13.324 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Date Match Status false
+20:54:13.331 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:54:13.339 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user/createWithArray
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 498
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+[{"id":40,"username":"kinginnorth","firstName":"John","lastName":"Snow","email":"nighwatch@gmail.com","password":"stark@123","phone":"0123456789","userStatus":0},{"id":41,"username":"wheelbreaker","firstName":"Daenrys","lastName":"Targaryen","email":"dracarys@gmail.com","password":"Targaryen@123","phone":"0123456789","userStatus":0},{"id":41,"username":"knightking","firstName":"Long","lastName":"Night","email":"dragonblade@gmail.com","password":"Night@123","phone":"0123456789","userStatus":0}]
+
+20:54:14.330 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 992.12
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:24:15 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"ok"}
+
+20:54:14.333 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "ok"
+}
+
+20:54:14.338 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 2 of 2: src/test/resources/Store.feature
+20:56:32.461 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+20:56:32.584 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:56:32.682 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - scenario called at line: 18 by tag: @CalculateBMI
+20:56:33.191 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/imperial?weight=200&height=68
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+20:56:34.598 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1405.46
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 75
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:26:35 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b10bab-1cdbbb803d7d8bb814f06e38;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 73
+1 < X-RateLimit-Requests-Reset: 2593242
+1 < x-amz-apigw-id: AC7C2EsrCYcFjbg=
+1 < x-amzn-RequestId: 891d9349-eaf0-4c85-a575-bce306e8b4e3
+{"bmi":30.406574394463668,"weight":"200","height":"68","weightCategory":""}
+
+20:56:34.614 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/weight-category?bmi=30.406574394463668
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+20:56:35.771 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1157.45
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 76
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:26:36 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b10bac-3cef89003fd43f1355f4939c;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 72
+1 < X-RateLimit-Requests-Reset: 2593241
+1 < x-amz-apigw-id: AC7DBEzriYcFr2A=
+1 < x-amzn-RequestId: d5150bd8-1b70-4637-9dff-bc509415b38e
+{"bmi":"30.406574394463668","weightCategory":"Obese","ObeseClass":"Class 1"}
+
+20:56:35.774 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Calculated BMI--- 30.406574394463668
+20:56:35.777 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Weight Category--- Obese
+20:56:35.810 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 2: src/test/resources/BMI.feature
+20:56:35.818 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:56:35.825 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 161
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+{"id":11,"username":"Jack123","firstName":"Jack","lastName":"Sparrow","email":"jacksparrow@gmail.com","password":"Jack@1234","phone":"9003061057","userStatus":0}
+
+20:56:36.897 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1071.98
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:26:38 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"11"}
+
+20:56:36.903 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "11"
+}
+
+20:56:36.928 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Date Match Status false
+20:56:36.935 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:56:36.942 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user/createWithArray
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 498
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+[{"id":40,"username":"kinginnorth","firstName":"John","lastName":"Snow","email":"nighwatch@gmail.com","password":"stark@123","phone":"0123456789","userStatus":0},{"id":41,"username":"wheelbreaker","firstName":"Daenrys","lastName":"Targaryen","email":"dracarys@gmail.com","password":"Targaryen@123","phone":"0123456789","userStatus":0},{"id":41,"username":"knightking","firstName":"Long","lastName":"Night","email":"dragonblade@gmail.com","password":"Night@123","phone":"0123456789","userStatus":0}]
+
+20:56:37.952 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1009.71
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:26:39 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"ok"}
+
+20:56:37.953 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "ok"
+}
+
+20:56:37.959 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 2 of 2: src/test/resources/Store.feature
+20:58:29.446 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+20:58:29.564 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:58:29.668 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - scenario called at line: 18 by tag: @CalculateBMI
+20:58:30.174 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/imperial?weight=200&height=68
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+20:58:31.586 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1410.12
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 75
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:28:32 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b10c20-6044e17b5b17064b5f035dd1;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 71
+1 < X-RateLimit-Requests-Reset: 2593125
+1 < x-amz-apigw-id: AC7VIGgOiYcF6xw=
+1 < x-amzn-RequestId: b71b9ae5-7aa0-4dff-9f45-3aa5363d3db7
+{"bmi":30.406574394463668,"weight":"200","height":"68","weightCategory":""}
+
+20:58:31.602 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/weight-category?bmi=30.406574394463668
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+20:58:32.750 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1148.33
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 76
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:28:33 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b10c21-3bd351da3f116ef2776a38e5;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 70
+1 < X-RateLimit-Requests-Reset: 2593124
+1 < x-amz-apigw-id: AC7VUEeXiYcFkXw=
+1 < x-amzn-RequestId: 8206858d-ee9d-4ae3-bdf4-caf2cc530a74
+{"bmi":"30.406574394463668","weightCategory":"Obese","ObeseClass":"Class 1"}
+
+20:58:32.752 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Calculated BMI--- 30.406574394463668
+20:58:32.756 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Weight Category--- Obese
+20:58:32.788 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 2: src/test/resources/BMI.feature
+20:58:32.795 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:58:32.808 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 161
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+{"id":11,"username":"Jack123","firstName":"Jack","lastName":"Sparrow","email":"jacksparrow@gmail.com","password":"Jack@1234","phone":"9003061057","userStatus":0}
+
+20:58:33.877 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1068.22
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:28:34 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"11"}
+
+20:58:33.877 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "11"
+}
+
+20:58:33.896 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Date Match Status false
+20:58:33.904 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:58:33.912 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user/createWithArray
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 498
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+[{"id":40,"username":"kinginnorth","firstName":"John","lastName":"Snow","email":"nighwatch@gmail.com","password":"stark@123","phone":"0123456789","userStatus":0},{"id":41,"username":"wheelbreaker","firstName":"Daenrys","lastName":"Targaryen","email":"dracarys@gmail.com","password":"Targaryen@123","phone":"0123456789","userStatus":0},{"id":41,"username":"knightking","firstName":"Long","lastName":"Night","email":"dragonblade@gmail.com","password":"Night@123","phone":"0123456789","userStatus":0}]
+
+20:58:34.916 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1002.48
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:28:36 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"ok"}
+
+20:58:34.917 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "ok"
+}
+
+20:58:34.922 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 2 of 2: src/test/resources/Store.feature
+20:59:58.122 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+20:59:58.236 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+20:59:58.332 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - scenario called at line: 18 by tag: @CalculateBMI
+20:59:58.870 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/imperial?weight=200&height=68
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+21:00:00.315 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1443.45
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 75
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:30:01 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b10c79-0988d35420a4bfd92a6d23bb;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 69
+1 < X-RateLimit-Requests-Reset: 2593036
+1 < x-amz-apigw-id: AC7i_H6NCYcFsCQ=
+1 < x-amzn-RequestId: 5a94c5bd-816c-47a2-aef4-fe76d11d7f37
+{"bmi":30.406574394463668,"weight":"200","height":"68","weightCategory":""}
+
+21:00:00.333 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/weight-category?bmi=30.406574394463668
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+21:00:01.514 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1180.66
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 76
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:30:02 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b10c7a-597db81702fec7d35dc523d1;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 68
+1 < X-RateLimit-Requests-Reset: 2593035
+1 < x-amz-apigw-id: AC7jLHxcCYcFUAQ=
+1 < x-amzn-RequestId: c4323584-1d2e-49c3-bf74-5f21963d55ba
+{"bmi":"30.406574394463668","weightCategory":"Obese","ObeseClass":"Class 1"}
+
+21:00:01.516 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Calculated BMI--- 30.406574394463668
+21:00:01.521 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Weight Category--- Obese
+21:00:01.554 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 2: src/test/resources/BMI.feature
+21:00:01.570 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+21:00:01.580 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 161
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+{"id":11,"username":"Jack123","firstName":"Jack","lastName":"Sparrow","email":"jacksparrow@gmail.com","password":"Jack@1234","phone":"9003061057","userStatus":0}
+
+21:00:02.714 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1132.71
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:30:03 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"11"}
+
+21:00:02.715 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "11"
+}
+
+21:00:02.769 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Date Match Status false
+21:00:02.783 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+21:00:02.794 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user/createWithArray
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 498
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+[{"id":40,"username":"kinginnorth","firstName":"John","lastName":"Snow","email":"nighwatch@gmail.com","password":"stark@123","phone":"0123456789","userStatus":0},{"id":41,"username":"wheelbreaker","firstName":"Daenrys","lastName":"Targaryen","email":"dracarys@gmail.com","password":"Targaryen@123","phone":"0123456789","userStatus":0},{"id":41,"username":"knightking","firstName":"Long","lastName":"Night","email":"dragonblade@gmail.com","password":"Night@123","phone":"0123456789","userStatus":0}]
+
+21:00:03.804 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1009.12
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:30:04 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"ok"}
+
+21:00:03.805 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "ok"
+}
+
+21:00:03.811 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 2 of 2: src/test/resources/Store.feature
+21:01:13.719 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+21:01:13.833 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+21:01:13.932 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - scenario called at line: 18 by tag: @CalculateBMI
+21:01:14.468 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/imperial?weight=200&height=68
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+21:01:15.924 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1454.87
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 75
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:31:17 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b10cc4-6ba183937809ddbf0c3b3f54;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 67
+1 < X-RateLimit-Requests-Reset: 2592960
+1 < x-amz-apigw-id: AC7uzGd-iYcFW5A=
+1 < x-amzn-RequestId: a5ec460d-6e47-4652-96c2-76a7467578f7
+{"bmi":30.406574394463668,"weight":"200","height":"68","weightCategory":""}
+
+21:01:15.940 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/weight-category?bmi=30.406574394463668
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+21:01:17.048 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1107.02
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 76
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:31:18 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b10cc6-15d19c862bbfd49c2dafc60b;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 66
+1 < X-RateLimit-Requests-Reset: 2592959
+1 < x-amz-apigw-id: AC7u_HgPiYcF_2Q=
+1 < x-amzn-RequestId: 4d8c8677-0d67-4126-8ca9-ea0d6eba5eab
+{"bmi":"30.406574394463668","weightCategory":"Obese","ObeseClass":"Class 1"}
+
+21:01:17.050 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Calculated BMI--- 30.406574394463668
+21:01:17.054 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Weight Category--- Obese
+21:01:17.086 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 2: src/test/resources/BMI.feature
+21:01:17.100 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+21:01:17.107 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 161
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+{"id":11,"username":"Jack123","firstName":"Jack","lastName":"Sparrow","email":"jacksparrow@gmail.com","password":"Jack@1234","phone":"9003061057","userStatus":0}
+
+21:01:18.151 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1043.20
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:31:19 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"11"}
+
+21:01:18.152 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "11"
+}
+
+21:01:18.172 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Date Match Status false
+21:01:18.179 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+21:01:18.188 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user/createWithArray
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 498
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+[{"id":40,"username":"kinginnorth","firstName":"John","lastName":"Snow","email":"nighwatch@gmail.com","password":"stark@123","phone":"0123456789","userStatus":0},{"id":41,"username":"wheelbreaker","firstName":"Daenrys","lastName":"Targaryen","email":"dracarys@gmail.com","password":"Targaryen@123","phone":"0123456789","userStatus":0},{"id":41,"username":"knightking","firstName":"Long","lastName":"Night","email":"dragonblade@gmail.com","password":"Night@123","phone":"0123456789","userStatus":0}]
+
+21:01:19.138 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 950.18
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 28 May 2021 15:31:20 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"ok"}
+
+21:01:19.139 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "ok"
+}
+
+21:01:19.145 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 2 of 2: src/test/resources/Store.feature
+11:40:30.931 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+11:40:31.066 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+11:40:31.428 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - scenario called at line: 18 by tag: @CalculateBMI
+11:40:32.017 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/imperial?weight=200&height=68
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+11:40:33.803 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1785.54
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 75
+1 < Content-Type: application/json
+1 < Date: Mon, 31 May 2021 06:10:35 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b47ddb-2b4d5f2b5277eaa214c889df;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 65
+1 < X-RateLimit-Requests-Reset: 2367402
+1 < x-amz-apigw-id: ALiaRH2nCYcFunw=
+1 < x-amzn-RequestId: a96a6cf7-05df-4f9b-8761-3a0f6c8bf828
+{"bmi":30.406574394463668,"weight":"200","height":"68","weightCategory":""}
+
+11:40:33.820 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/weight-category?bmi=30.406574394463668
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+11:40:35.174 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1354.10
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 76
+1 < Content-Type: application/json
+1 < Date: Mon, 31 May 2021 06:10:36 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b47ddc-440727ef540727c0397de3cc;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 64
+1 < X-RateLimit-Requests-Reset: 2367401
+1 < x-amz-apigw-id: ALiaeH6zCYcFwmg=
+1 < x-amzn-RequestId: 76f5e1d9-80a4-4fad-a743-619e2cb6d352
+{"bmi":"30.406574394463668","weightCategory":"Obese","ObeseClass":"Class 1"}
+
+11:40:35.176 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Calculated BMI--- 30.406574394463668
+11:40:35.180 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Weight Category--- Obese
+11:40:35.254 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 2: src/test/resources/BMI.feature
+11:40:35.263 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+11:40:35.271 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 161
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+{"id":11,"username":"Jack123","firstName":"Jack","lastName":"Sparrow","email":"jacksparrow@gmail.com","password":"Jack@1234","phone":"9003061057","userStatus":0}
+
+11:40:36.424 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1152.56
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 31 May 2021 06:10:38 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"11"}
+
+11:40:36.425 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "11"
+}
+
+11:40:36.444 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Date Match Status false
+11:40:36.451 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+11:40:36.463 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user/createWithArray
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 498
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+[{"id":40,"username":"kinginnorth","firstName":"John","lastName":"Snow","email":"nighwatch@gmail.com","password":"stark@123","phone":"0123456789","userStatus":0},{"id":41,"username":"wheelbreaker","firstName":"Daenrys","lastName":"Targaryen","email":"dracarys@gmail.com","password":"Targaryen@123","phone":"0123456789","userStatus":0},{"id":41,"username":"knightking","firstName":"Long","lastName":"Night","email":"dragonblade@gmail.com","password":"Night@123","phone":"0123456789","userStatus":0}]
+
+11:40:37.435 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 971.91
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 31 May 2021 06:10:39 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"ok"}
+
+11:40:37.436 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "ok"
+}
+
+11:40:37.451 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 2 of 2: src/test/resources/Store.feature
+12:19:29.327 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+12:19:29.511 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+12:19:29.927 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - scenario called at line: 18 by tag: @CalculateBMI
+12:19:30.578 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/imperial?weight=200&height=68
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+12:19:32.932 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 2350.85
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 75
+1 < Content-Type: application/json
+1 < Date: Mon, 31 May 2021 06:49:34 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b486fe-659726783e78e7053cfe9d58;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 63
+1 < X-RateLimit-Requests-Reset: 2365063
+1 < x-amz-apigw-id: ALoHwECwiYcFXww=
+1 < x-amzn-RequestId: dfb0f304-668b-4d33-991e-688a8627b344
+{"bmi":30.406574394463668,"weight":"200","height":"68","weightCategory":""}
+
+12:19:32.948 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/weight-category?bmi=30.406574394463668
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+12:19:34.376 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1427.96
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 76
+1 < Content-Type: application/json
+1 < Date: Mon, 31 May 2021 06:49:36 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b486ff-7b8a1c903a6b703b33870506;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 62
+1 < X-RateLimit-Requests-Reset: 2365061
+1 < x-amz-apigw-id: ALoH-F-zCYcFdGA=
+1 < x-amzn-RequestId: 8adab182-36ac-4853-a9b9-72fa5ee19020
+{"bmi":"30.406574394463668","weightCategory":"Obese","ObeseClass":"Class 1"}
+
+12:19:34.378 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Calculated BMI--- 30.406574394463668
+12:19:34.383 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Weight Category--- Obese
+12:19:34.455 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 2: src/test/resources/BMI.feature
+12:19:34.465 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+12:19:34.477 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 161
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+{"id":11,"username":"Jack123","firstName":"Jack","lastName":"Sparrow","email":"jacksparrow@gmail.com","password":"Jack@1234","phone":"9003061057","userStatus":0}
+
+12:19:35.647 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1168.74
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 31 May 2021 06:49:37 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"11"}
+
+12:19:35.648 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "11"
+}
+
+12:19:35.683 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Date Match Status false
+12:19:35.698 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+12:19:35.717 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user/createWithArray
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 498
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+[{"id":40,"username":"kinginnorth","firstName":"John","lastName":"Snow","email":"nighwatch@gmail.com","password":"stark@123","phone":"0123456789","userStatus":0},{"id":41,"username":"wheelbreaker","firstName":"Daenrys","lastName":"Targaryen","email":"dracarys@gmail.com","password":"Targaryen@123","phone":"0123456789","userStatus":0},{"id":41,"username":"knightking","firstName":"Long","lastName":"Night","email":"dragonblade@gmail.com","password":"Night@123","phone":"0123456789","userStatus":0}]
+
+12:19:36.663 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 944.69
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 31 May 2021 06:49:38 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"ok"}
+
+12:19:36.663 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "ok"
+}
+
+12:19:36.670 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 2 of 2: src/test/resources/Store.feature
+12:20:48.545 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+12:20:48.695 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+12:20:49.095 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - scenario called at line: 18 by tag: @CalculateBMI
+12:20:49.664 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/imperial?weight=200&height=68
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+12:20:51.097 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1429.45
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 75
+1 < Content-Type: application/json
+1 < Date: Mon, 31 May 2021 06:50:52 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b4874c-5a1291fb520c79602c99dde4;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 61
+1 < X-RateLimit-Requests-Reset: 2364985
+1 < x-amz-apigw-id: ALoUAEKrCYcFYYA=
+1 < x-amzn-RequestId: 0b8a288d-0ff5-4504-8479-66bdfeaf9cce
+{"bmi":30.406574394463668,"weight":"200","height":"68","weightCategory":""}
+
+12:20:51.125 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/weight-category?bmi=30.406574394463668
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+12:20:52.263 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1137.61
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 76
+1 < Content-Type: application/json
+1 < Date: Mon, 31 May 2021 06:50:53 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b4874d-2b6885cf56553ab053048800;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 60
+1 < X-RateLimit-Requests-Reset: 2364984
+1 < x-amz-apigw-id: ALoUMFRkiYcFxaQ=
+1 < x-amzn-RequestId: 14908d86-883b-4318-9e01-b79586b0cfea
+{"bmi":"30.406574394463668","weightCategory":"Obese","ObeseClass":"Class 1"}
+
+12:20:52.265 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Calculated BMI--- 30.406574394463668
+12:20:52.269 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Weight Category--- Obese
+12:20:52.322 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 2: src/test/resources/BMI.feature
+12:20:52.331 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+12:20:52.337 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 161
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+{"id":11,"username":"Jack123","firstName":"Jack","lastName":"Sparrow","email":"jacksparrow@gmail.com","password":"Jack@1234","phone":"9003061057","userStatus":0}
+
+12:20:53.579 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1240.55
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 31 May 2021 06:50:55 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"11"}
+
+12:20:53.579 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "11"
+}
+
+12:20:53.601 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Date Match Status false
+12:20:53.613 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+12:20:53.630 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user/createWithArray
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 498
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+[{"id":40,"username":"kinginnorth","firstName":"John","lastName":"Snow","email":"nighwatch@gmail.com","password":"stark@123","phone":"0123456789","userStatus":0},{"id":41,"username":"wheelbreaker","firstName":"Daenrys","lastName":"Targaryen","email":"dracarys@gmail.com","password":"Targaryen@123","phone":"0123456789","userStatus":0},{"id":41,"username":"knightking","firstName":"Long","lastName":"Night","email":"dragonblade@gmail.com","password":"Night@123","phone":"0123456789","userStatus":0}]
+
+12:20:54.642 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1011.78
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 31 May 2021 06:50:56 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"ok"}
+
+12:20:54.642 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "ok"
+}
+
+12:20:54.648 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 2 of 2: src/test/resources/Store.feature
+12:21:20.147 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+12:21:20.291 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+12:21:20.595 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - scenario called at line: 18 by tag: @CalculateBMI
+12:21:21.120 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/imperial?weight=200&height=68
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+12:21:22.481 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1358.43
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 75
+1 < Content-Type: application/json
+1 < Date: Mon, 31 May 2021 06:51:24 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b4876c-6f3712195cd35dea4009ab71;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 59
+1 < X-RateLimit-Requests-Reset: 2364953
+1 < x-amz-apigw-id: ALoY6GuRCYcFppQ=
+1 < x-amzn-RequestId: 88f44601-1470-48b4-9fb3-b892ef3330a0
+{"bmi":30.406574394463668,"weight":"200","height":"68","weightCategory":""}
+
+12:21:22.496 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/weight-category?bmi=30.406574394463668
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+12:21:23.624 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1127.44
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 76
+1 < Content-Type: application/json
+1 < Date: Mon, 31 May 2021 06:51:25 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b4876d-562d53d56c237b5c104e1fe8;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 58
+1 < X-RateLimit-Requests-Reset: 2364952
+1 < x-amz-apigw-id: ALoZFGsPiYcFyzw=
+1 < x-amzn-RequestId: e8b0de3c-3004-4df9-9d7a-6c628d08e3d7
+{"bmi":"30.406574394463668","weightCategory":"Obese","ObeseClass":"Class 1"}
+
+12:21:23.626 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Calculated BMI--- 30.406574394463668
+12:21:23.631 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Weight Category--- Obese
+12:21:23.676 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 2: src/test/resources/BMI.feature
+12:21:23.686 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+12:21:23.692 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 161
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+{"id":11,"username":"Jack123","firstName":"Jack","lastName":"Sparrow","email":"jacksparrow@gmail.com","password":"Jack@1234","phone":"9003061057","userStatus":0}
+
+12:21:24.773 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1080.19
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 31 May 2021 06:51:26 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"11"}
+
+12:21:24.774 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "11"
+}
+
+12:21:24.795 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Date Match Status false
+12:21:24.801 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+12:21:24.815 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user/createWithArray
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 498
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+[{"id":40,"username":"kinginnorth","firstName":"John","lastName":"Snow","email":"nighwatch@gmail.com","password":"stark@123","phone":"0123456789","userStatus":0},{"id":41,"username":"wheelbreaker","firstName":"Daenrys","lastName":"Targaryen","email":"dracarys@gmail.com","password":"Targaryen@123","phone":"0123456789","userStatus":0},{"id":41,"username":"knightking","firstName":"Long","lastName":"Night","email":"dragonblade@gmail.com","password":"Night@123","phone":"0123456789","userStatus":0}]
+
+12:21:25.807 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 990.55
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 31 May 2021 06:51:27 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"ok"}
+
+12:21:25.807 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "ok"
+}
+
+12:21:25.814 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 2 of 2: src/test/resources/Store.feature
+12:25:06.091 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+12:25:06.225 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+12:25:06.336 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - scenario called at line: 18 by tag: @CalculateBMI
+12:25:06.966 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/imperial?weight=200&height=68
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+12:25:08.415 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1447.78
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 75
+1 < Content-Type: application/json
+1 < Date: Mon, 31 May 2021 06:55:10 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b4884d-3681275462c8f08f0fa69093;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 57
+1 < X-RateLimit-Requests-Reset: 2364727
+1 < x-amz-apigw-id: ALo8NFrbCYcFWsw=
+1 < x-amzn-RequestId: 7c664d5e-bed4-45dd-961b-73dca00d16a5
+{"bmi":30.406574394463668,"weight":"200","height":"68","weightCategory":""}
+
+12:25:08.440 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://body-mass-index-bmi-calculator.p.rapidapi.com/weight-category?bmi=30.406574394463668
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+1 > x-rapidapi-host: body-mass-index-bmi-calculator.p.rapidapi.com
+1 > x-rapidapi-key: 79b4e3e020msh96182e0b1ca3bdcp1c86edjsnd6897ac5ed53
+
+12:25:09.584 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1143.74
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 76
+1 < Content-Type: application/json
+1 < Date: Mon, 31 May 2021 06:55:11 GMT
+1 < Server: RapidAPI-1.2.8
+1 < X-Amzn-Trace-Id: Root=1-60b4884f-65961c4f554779bd3c930fa2;Sampled=0
+1 < X-RapidAPI-Region: AWS - ap-southeast-1
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RateLimit-Requests-Limit: 100
+1 < X-RateLimit-Requests-Remaining: 56
+1 < X-RateLimit-Requests-Reset: 2364726
+1 < x-amz-apigw-id: ALo8ZFGwiYcFx3Q=
+1 < x-amzn-RequestId: 8bf8d26d-1273-4985-82f4-309a72b38c55
+{"bmi":"30.406574394463668","weightCategory":"Obese","ObeseClass":"Class 1"}
+
+12:25:09.586 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Calculated BMI--- 30.406574394463668
+12:25:09.590 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Weight Category--- Obese
+12:25:09.626 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 2: src/test/resources/BMI.feature
+12:25:09.642 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+12:25:09.651 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 161
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+{"id":11,"username":"Jack123","firstName":"Jack","lastName":"Sparrow","email":"jacksparrow@gmail.com","password":"Jack@1234","phone":"9003061057","userStatus":0}
+
+12:25:10.840 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1187.47
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 31 May 2021 06:55:12 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"11"}
+
+12:25:10.841 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "11"
+}
+
+12:25:10.861 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] Date Match Status false
+12:25:10.868 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Test Environment Selected :  
+12:25:10.879 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user/createWithArray
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 498
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_271)
+[{"id":40,"username":"kinginnorth","firstName":"John","lastName":"Snow","email":"nighwatch@gmail.com","password":"stark@123","phone":"0123456789","userStatus":0},{"id":41,"username":"wheelbreaker","firstName":"Daenrys","lastName":"Targaryen","email":"dracarys@gmail.com","password":"Targaryen@123","phone":"0123456789","userStatus":0},{"id":41,"username":"knightking","firstName":"Long","lastName":"Night","email":"dragonblade@gmail.com","password":"Night@123","phone":"0123456789","userStatus":0}]
+
+12:25:11.918 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1038.05
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Mon, 31 May 2021 06:55:13 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":200,"type":"unknown","message":"ok"}
+
+12:25:11.919 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "ok"
+}
+
+12:25:11.929 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 2 of 2: src/test/resources/Store.feature

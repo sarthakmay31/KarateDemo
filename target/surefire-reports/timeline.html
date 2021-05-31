@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-1"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"BMI[2:21]","start":651,"end":3962,"title":"BMI[2:21] 05:30:00.651-05:30:03.962 User weight category based on the calculated BMI"},{"id":2,"group":1,"content":"Store[1:5]","start":4016,"end":5235,"title":"Store[1:5] 05:30:04.016-05:30:05.235 Create Single User"},{"id":3,"group":1,"content":"Store[2:23]","start":5240,"end":6295,"title":"Store[2:23] 05:30:05.240-05:30:06.295 Create Multiple Users using json array"}]);
+var container = document.getElementById('visualization');
+var timeline = new vis.Timeline(container);
+timeline.setOptions({ groupOrder: 'content' });
+timeline.setGroups(groups);
+timeline.setItems(items);
+</script>
+  </body>
+</html>
