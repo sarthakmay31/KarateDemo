@@ -12,12 +12,7 @@ Feature: Collections of MyStore Application
     And match response.code == 200
     And match response.message == '#string'
     And match response.type == '#present'
-   
-     * def utils = Java.type('com.demo.custom.CustomFunctions')
-    * def date = responseHeaders['Date']
-    * def datematch = utils.matchDate(date)
-    * print 'Date Match Status',datematch
-    And match datematch == false
+
 
   @CreateMultipleUser-JSON
   Scenario: Create Multiple Users using json array
